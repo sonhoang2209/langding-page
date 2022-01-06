@@ -28,6 +28,10 @@ body {
 }
 
 .align-center {
+    align-items: center;
+}
+
+.text-align {
     text-align: center;
 }
 
@@ -48,9 +52,56 @@ body {
     font-family: Montserrat, sans-serif !important;
 }
 
+.font-merriweather {
+    font-family: Merriweather, serif !important;
+}
+
 .text {
     word-wrap: break-word;
     position: relative;
+}
+
+.text-2 {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 20px 0 0;
+}
+
+.border-10-0 {
+    border: 10px solid transparent;
+    padding: 0;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+
+/* layout 60 */
+
+.layout-60 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.layout-60 .size-36 {
+    width: 60%;
+}
+
+.layout-60 .size-30 {
+    width: 50%;
+}
+
+.layout-60 .size-24 {
+    width: 40%;
+}
+
+.layout-60 .size-17 {
+    width: calc(100% * 17 / 60);
+}
+
+.layout-60 .size-26 {
+    width:  calc(100% * 26 / 60);
 }
 
 /* header */
@@ -99,6 +150,17 @@ body {
     margin: 60px auto 0;
 }
 
+.section .icon {
+    height: 64px;
+    width: 64px;
+    display: block;
+}
+
+.section .icon img {
+    width: 100%;
+    height: 100%;
+}
+
 .section .section-layout {
     padding: 30px 30px 0;
 }
@@ -119,13 +181,15 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url('images/pexels-photo-6171394.jpeg');  
+}
+
+.section-2 .background-image {
     height: 491px;
     object-position: 50% 81.55%;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 81.55%;
-
 }
 
 .section .repeater {
@@ -157,7 +221,7 @@ body {
     margin: 22px 1px 0;
 }
 
-.section .repeater .icon {
+.section .icon {
     height: 64px;
     width: 64px;
     color: rgb(0, 0, 0) !important;
@@ -183,6 +247,7 @@ body {
 }
 .section-3 .section-container .layout {
     display: flex;
+    height: 100%;
 }
 
 .section-3 .section-container .position-image {
@@ -191,11 +256,231 @@ body {
 
 .section-3 .section-container .content {
     width: calc(100% * 26 / 60);
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.section-3 .section-container .title {
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .section-3 .section-container .position-image img {
     width: 330px;
     height: 334px;
+}
+
+.section-3 .section-container .image-right {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.section .block-list-2 img {
+    width: 44px;
+    height: 44px;
+}
+
+.section-04 .section-container {
+    width: 1140px;
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+.section .circle-block {
+    background-color: #9eafbf;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .block-list-2 .icon .svg-link {
+    width: 44px;
+    height: 44px;
+    fill: #fff;
+}
+
+/* section 04 */
+.section-04 .item-layout {
+    display: flex;
+    padding: 30px;
+}
+
+.section-04 .item-layout .item-body {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.section-04 .item-layout .item-body h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+.section-04 .item-layout .item-body p{
+    margin-top: 0;
+    color: #999999;
+}
+
+.section a.btn-2{
+    margin: 30px 0 0 0 ;
+    border-width: 2px;
+    display: block;
+    text-decoration: none;
+    border-style: solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-color: #9eafbf ;
+    background-color: transparent ;
+    border-radius: 25px ;
+    color: #9eafbf;
+    display: table;
+    text-align: center;
+    padding: 10px 30px;
+}
+.section a.btn-2:hover{
+    color: #ffffff !important;
+    background-color: #9eafbf !important;
+}
+
+.section-04 .block-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.section-04 .big-circle {
+    width: 550px;
+    height: 550px;
+}
+
+.section-04 .big-circle .block-content {
+    padding: 30px;
+}
+
+.section-04 .big-circle .block-content .title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.section-04 .big-circle .block-content .text-2 {
+    width: 344px;
+    margin: 30px auto 0;
+}
+
+
+/* section 05 */
+
+.section-05 .background-image {
+    background-image: url(images/pexels-photo-5646794.jpeg);
+    background-position: 100% 76.05%;
+    min-height: 644px;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-05 .accordion {
+    width: 570px;
+    margin: 35px auto 60px;
+}
+
+.section-05 .title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 60px 113px 0;
+}
+
+.section-05 .accordion .accordion-item {
+    background-color: transparent;
+}
+
+.section-05 .accordion .accordion-item.top-30 {
+    margin-top: 30px;
+}
+
+.section-05 .accordion .accordion-item .accordion-header button:after {
+    display: none;
+}
+.section-05 .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    color: #ffffff !important;
+    background-color: #9eafbf !important;
+    border: 0;
+}
+
+.section-05 .accordion .accordion-item .accordion-header button {
+    background-image: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 30px;
+    display: block;
+    line-height: 1.6;
+    border-radius: 50px;
+}
+
+.section-05 .accordion .accordion-item .accordion-body {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    padding: 30px;
+}
+
+
+/* section 06 */
+
+.section-06 .position-image img {
+    height: 361px !important;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.section-06 .btn-2 {
+    margin: 30px auto 0 !important;
+    letter-spacing: 2px;
+}
+
+
+
+/* section 07 */
+
+.section-07 {
+    background-color: #e5e5e5;
+}
+
+.section-07 .section-container {
+    width: 1140px;
+    min-height: 778px
+}
+
+
+.section-07 .section-container .layout {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-07 .background-image.image-1 {
+    min-height: 339px;
+    background-image: url('images/pexels-photo-6146810.jpeg');
+    background-position: 50% 50%;
+}
+
+.section-07 .background-image.image-2 {
+    min-height: 339px;
+    background-image: url('images/pexels-photo-6171394.jpeg');
+    background-position: 50.78% 71.26%;
+}
+
+.section-07 .background-image.image-3 {
+    min-height: 678px;
+    background-image: url('images/pexels-photo-5490234.jpeg');
+    background-position: 50% 50%;
+    height: 100%;
+    background-size: cover;
 }
 
 
@@ -213,5 +498,8 @@ body {
     .section .repeater .block-layout{
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .layout-60 .col-60 {
+        width: 100% !important;
     }
 }
